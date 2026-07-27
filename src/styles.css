@@ -104,10 +104,11 @@ body {
   background: var(--gradient-fire);
   background-size: 200% 200%;
   transition: background-position 500ms ease;
+  &:hover {
+    background-position: 100% 50%;
+  }
 }
-@utility bg-gradient-fire:hover {
-  background-position: 100% 50%;
-}
+
 
 @utility heading-gradient {
   background: linear-gradient(180deg, #ffffff 0%, #ffe9c4 60%, #ffb14a 100%);
