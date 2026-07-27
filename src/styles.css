@@ -104,10 +104,11 @@ body {
   background: var(--gradient-fire);
   background-size: 200% 200%;
   transition: background-position 500ms ease;
+  &:hover {
+    background-position: 100% 50%;
+  }
 }
-@utility bg-gradient-fire:hover {
-  background-position: 100% 50%;
-}
+
 
 @utility heading-gradient {
   background: linear-gradient(180deg, #ffffff 0%, #ffe9c4 60%, #ffb14a 100%);
@@ -121,12 +122,13 @@ body {
   border: 1px solid rgba(255,255,255,0.08);
   backdrop-filter: blur(16px);
   transition: transform 400ms cubic-bezier(0.2,0.7,0.2,1), border-color 400ms, box-shadow 400ms;
+  &:hover {
+    border-color: rgba(255,255,255,0.18);
+    box-shadow: 0 30px 60px -20px rgba(255,45,45,0.25), 0 20px 60px -30px rgba(255,107,0,0.3);
+    transform: translateY(-6px);
+  }
 }
-@utility glass-card:hover {
-  border-color: rgba(255,255,255,0.18);
-  box-shadow: 0 30px 60px -20px rgba(255,45,45,0.25), 0 20px 60px -30px rgba(255,107,0,0.3);
-  transform: translateY(-6px);
-}
+
 
 @utility glow-red { box-shadow: var(--shadow-glow-red); }
 @utility glow-orange { box-shadow: var(--shadow-glow-orange); }
